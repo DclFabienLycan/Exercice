@@ -27,8 +27,8 @@ body {
 }
 
 #stone {
-    box-shadow: 2px 1px 2px 0px red;
-    border-radius: 100%;
+    box-shadow: 3px 1px 3px 0px red;
+    border-radius: 50%;
     width: 80%;
     height: 100%;
     margin-left: 5%;
@@ -39,8 +39,8 @@ body {
 }
 
 #paper {
-    box-shadow: 2px 1px 2px 0px red;
-    border-radius: 100%;
+    box-shadow: 3px 1px 3px 0px red;
+    border-radius: 50%;
     width: 80%;
     height: 100%;
     margin-left: 5%;
@@ -52,8 +52,8 @@ body {
 }
 
 #scissors {
-    box-shadow: 2px 1px 2px 0px red;
-    border-radius: 100%;
+    box-shadow: 3px 1px 3px 0px red;
+    border-radius: 50%;
     width: 80%;
     height: 100%;
     margin-left: 5%;
@@ -108,15 +108,21 @@ h1 {
 }
 
 #You {
+    background-repeat: no-repeat;
+    background-size: cover;
     border: 2px solid black;
     height: 150px;
     width: 150px;
+    text-align: center;
 }
 
 #ordi {
+    background-repeat: no-repeat;
+    background-size: cover;
     border: 2px solid black;
     height: 150px;
     width: 150px;
+    text-align: center;
 }
 
 h2 {
@@ -129,8 +135,14 @@ h2 {
 
 #resultats {
     border: 2px solid black;
+    color: red;
     margin-left: 3%;
     margin-top: 80px;
+    font-family: "Permanent Marker";
+    font-size: 2em;
+    font-weight: 700;
+    padding-top: 40px;
+    text-align: center;
     height: 100px;
     width: 90%;
 }
