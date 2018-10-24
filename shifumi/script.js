@@ -4,55 +4,68 @@ var bouton2 = document.getElementById("paper");
 var bouton3 = document.getElementById("scissors");
 var Vous = document.getElementById("You");
 var IA = document.getElementById("ordi");
-var score = document.getElementById("resultats");
+var score; 
 var restart = document.getElementById("button2");
+var joueur;
 
-// function
+// Créer le choix aléatoire de l'ordi
+var IA2;
+
+function ChoixOrdi () {
+    IA2 = Math.floor(Math.random() *3);
+    if (IA2 == 0) {
+        IA.style.backgroundImage = "url('img/if-39-harry-potter-colour-philosophers-stone-2730349_88175.svg')";
+    } else if (IA2 == 1) {
+        IA.style.backgroundImage = "url('./img/receipt-paper_icon-icons.com_56152.svg')";
+    } else if (IA2 == 2) {
+        IA.style.backgroundImage = "url('./img/Cut-80_icon-icons.com_57343.svg')";
+    }
+};
+
+// functions
+// Créer la fonction résultat
+function Resultat () {
+    if ((joueur = 0) && (IA2 = 1)) {
+        score = "You Loose !!";
+    } else if ((joueur = 0) && (IA2 = 2)) {
+        score = "You Win !!";
+    } else if ((joueur = 1) && (IA2 = 0)) {
+        score = "You Win !!";
+    } else if ((joueur = 1) && (IA2 = 2)) {
+        score = "You Loose !!";
+    } else if ((joueur = 2) && (IA2 = 0)) {
+        score = "You Loose !!";
+    } else if ((joueur = 2) && (IA2 = 1)) {
+        score = " You Win !!";
+    } else {
+        score = "No one won this !!"
+    }
+    document.getElementById("resultats").innerHTML = score;
+};
+// Créer le système réactif des clics
 bouton.addEventListener ("click",
 function () {
     Vous.style.backgroundImage = "url('img/if-39-harry-potter-colour-philosophers-stone-2730349_88175.svg')";
+    joueur = 0;
+    ChoixOrdi ();
+    Resultat ();
 }
 );
 
 bouton2.addEventListener ("click", 
 function () {
-    document.getElementById("You").style.backgroundImage = "url('./img/receipt-paper_icon-icons.com_56152.svg')";
+    Vous.style.backgroundImage = "url('./img/receipt-paper_icon-icons.com_56152.svg')";
+    joueur = 1;
+    ChoixOrdi ();
+    Resultat ();
 }
 );
 
-// function VotreChoix3 () {
-//     document.getElementById("You").img.src = "...";
-// };
-
-// Créer le système réactif des clics
-
-// Créer le choix aléatoire de l'ordi
-var IA2;
-IA2 = Math.floor(Math.random() *3);
-console.log(IA2);
-function ChoixOrdi () {
-    // IA = Math.floor(Math.random() *3);
-    if (IA2 == 0) {
-        IA = bouton;
-        console.log(bouton);
-    } else if (IA2 == 1) {
-        IA = bouton2;
-        console.log(bouton2);
-    } else if (IA2 == 2) {
-        IA = bouton3;
-        console.log(bouton3);
-    }
-    // console.log(IA);
-};
-ChoixOrdi ();
-
-// function VotreChoix (vous) {
-//     Vous = image choisis suivant le click;
-//     choix IA;
-// }
-
-// function ChoixOrdi (IA) {
-//     IA = Math.random(); avec source image;
-// }
-
-// function 
+bouton3.addEventListener ("click", 
+function () {
+    Vous.style.backgroundImage = "url('./img/Cut-80_icon-icons.com_57343.svg')";
+    joueur = 2;
+    ChoixOrdi ();
+    Resultat ();
+}
+);

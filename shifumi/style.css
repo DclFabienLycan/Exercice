@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {};
+/* @media screen and (max-width: 560px) {}; */
 
 * {
     margin: 0;
@@ -10,53 +10,89 @@ html {
     width: 100%;
 }
 
-.button {
-    box-shadow: 2px 1px 2px 0px red;
-    border-radius: 100px;
-    width: 30%;
-    height: 100px;
-}
-
-.button:active {
-    background-color: yellowgreen;
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 #buttons {
-    position: relative;
-    /* margin-left: 740px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    width: 100%;
+    height: auto;
 }
 
-#button2 {
-    box-shadow: 2px 2px 2px 0px red;
-    position: relative;
-    margin-left: 255px;
-    margin-top: 50px;
-    width: 150px;
-    height: 40px;
+#stone {
+    box-shadow: 2px 1px 2px 0px red;
+    border-radius: 100%;
+    width: 80%;
+    height: 100%;
+    margin-left: 5%;
+}
+#stone img {
+    width: 100%;
+    height: 80%;
 }
 
-#button2:active {
-    background-color: lightsalmon;
+#paper {
+    box-shadow: 2px 1px 2px 0px red;
+    border-radius: 100%;
+    width: 80%;
+    height: 100%;
+    margin-left: 5%;
+}
+
+#paper img {
+    width: 100%;
+    height: 70%;
+}
+
+#scissors {
+    box-shadow: 2px 1px 2px 0px red;
+    border-radius: 100%;
+    width: 80%;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#scissors img {
+    width: 100%;
+    height: 80%;
+}
+
+#stone:active {
+    background-color: yellowgreen;
+}
+
+#paper:active {
+    background-color: yellowgreen;
+}
+
+#scissors:active {
+    background-color: yellowgreen;
 }
 
 h1 {
     text-align: center;
-    font-size: 5em;
+    font-size: 3.5em;
 }
 
 #choix {
     text-align: center;
     font-family: "Indie Flower";
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 #combat {
     display: flex;
     justify-content: space-around;
-    /* margin-left: 550px;
-    margin-right: 550px; */
+    margin-left: 2%;
+    margin-right: 3%;
 }
 
 .table {
@@ -87,14 +123,28 @@ h2 {
     color: crimson;
     text-align: center;
     font-family: "Permanent Marker";
-    font-size: 4em;
-    margin-top: 45px;
+    font-size: 2em;
+    margin-top: 80px;
 }
 
 #resultats {
     border: 2px solid black;
-    /* margin-left: 730px; */
+    margin-left: 3%;
     margin-top: 80px;
     height: 100px;
-    width: 420px;
+    width: 90%;
+}
+
+#button2 {
+    box-shadow: 2px 2px 2px 0px red;
+    position: relative;
+    margin-left: 200px;
+    margin-top: 40px;
+    margin-bottom: 5%;
+    width: 150px;
+    height: 40px;
+}
+
+#button2:active {
+    background-color: lightsalmon;
 }
