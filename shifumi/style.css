@@ -1,0 +1,100 @@
+@media screen and (max-width: 768px) {};
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: lightyellow;
+    width: 100%;
+}
+
+.button {
+    box-shadow: 2px 1px 2px 0px red;
+    border-radius: 100px;
+    width: 30%;
+    height: 100px;
+}
+
+.button:active {
+    background-color: yellowgreen;
+}
+
+#buttons {
+    position: relative;
+    /* margin-left: 740px; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#button2 {
+    box-shadow: 2px 2px 2px 0px red;
+    position: relative;
+    margin-left: 255px;
+    margin-top: 50px;
+    width: 150px;
+    height: 40px;
+}
+
+#button2:active {
+    background-color: lightsalmon;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5em;
+}
+
+#choix {
+    text-align: center;
+    font-family: "Indie Flower";
+    font-size: 3em;
+}
+
+#combat {
+    display: flex;
+    justify-content: space-around;
+    /* margin-left: 550px;
+    margin-right: 550px; */
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center   
+}
+
+.table p {
+    font-family: "Permanent Marker";
+    font-size: 1.5em;
+}
+
+#You {
+    border: 2px solid black;
+    height: 150px;
+    width: 150px;
+}
+
+#ordi {
+    border: 2px solid black;
+    height: 150px;
+    width: 150px;
+}
+
+h2 {
+    color: crimson;
+    text-align: center;
+    font-family: "Permanent Marker";
+    font-size: 4em;
+    margin-top: 45px;
+}
+
+#resultats {
+    border: 2px solid black;
+    /* margin-left: 730px; */
+    margin-top: 80px;
+    height: 100px;
+    width: 420px;
+}

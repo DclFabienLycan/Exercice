@@ -24,9 +24,11 @@ function () {
 button3.addEventListener ("click", 
 function () {
     carre.style.width = "300px";
-}   setTimeout () {
     carre.style.height = "300px";
-}
+    carre.style.marginTop = "-150px";
+}   setTimeout(function () {
+    carre.style.width = carre + "px";
+}, 2000)
 );
 
 button4.addEventListener ("click", 
