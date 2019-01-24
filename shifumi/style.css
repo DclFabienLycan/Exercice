@@ -1,5 +1,4 @@
-@media screen and (max-width: 560px) {};
-
+/* Mobile First */
 * {
     margin: 0;
     padding: 0;
@@ -15,17 +14,23 @@ body {
     flex-direction: column;
 }
 
+h1 {
+    text-align: center;
+    font-size: 3.5em;
+}
+
+/* Style des boutons */
 #buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 2%;
+    margin-bottom: 2%;
     width: 100%;
     height: auto;
 }
-
+/* Style de la "pierre" */
 #stone {
     box-shadow: 3px 1px 3px 0px red;
     border-radius: 50%;
@@ -37,7 +42,7 @@ body {
     width: 100%;
     height: 80%;
 }
-
+/* Style du "papier" */
 #paper {
     box-shadow: 3px 1px 3px 0px red;
     border-radius: 50%;
@@ -50,7 +55,7 @@ body {
     width: 100%;
     height: 70%;
 }
-
+/* Style des "ciseaux" */
 #scissors {
     box-shadow: 3px 1px 3px 0px red;
     border-radius: 50%;
@@ -64,7 +69,7 @@ body {
     width: 100%;
     height: 80%;
 }
-
+/* Effect "active"sur les boutons */
 #stone:active {
     background-color: yellowgreen;
 }
@@ -76,18 +81,13 @@ body {
 #scissors:active {
     background-color: yellowgreen;
 }
-
-h1 {
-    text-align: center;
-    font-size: 3.5em;
-}
-
+/* Phrase du choix */
 #choix {
     text-align: center;
     font-family: "Indie Flower";
     font-size: 2.5em;
 }
-
+/* Toute la partie des div combats */
 #combat {
     display: flex;
     justify-content: space-around;
@@ -130,20 +130,20 @@ h2 {
     text-align: center;
     font-family: "Permanent Marker";
     font-size: 2em;
-    margin-top: 80px;
+    margin-top: 140px;
 }
-
+/* La partie résultat et reset */
 #resultats {
     border: 2px solid black;
     color: red;
     margin-left: 3%;
-    margin-top: 80px;
+    margin-top: 4%;
     font-family: "Permanent Marker";
     font-size: 2em;
     font-weight: 700;
     padding-top: 40px;
     text-align: center;
-    height: 100px;
+    height: 70px;
     width: 90%;
 }
 
@@ -160,3 +160,62 @@ h2 {
 #button2:active {
     background-color: lightsalmon;
 }
+/* Version Desktop */
+@media screen and (min-width: 560px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    #buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2%;
+        margin-left: 25%;
+        margin-bottom: 2%;
+        width: 50%;
+        height: auto;
+    }
+
+    #stone {
+        box-shadow: 3px 1px 3px 0px red;
+        border-radius: 50%;
+        width: 80%;
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 4%;
+    }
+
+    #paper {
+        margin-right: 4%;
+    }
+
+    h2 {
+        margin-top: 80px;
+    }
+
+    #combat {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    #You {
+        width: 250px;
+        height: 250px;
+    }
+
+    #ordi {
+        width: 250px;
+        height: 250px;
+    }
+    
+    #button2 {
+        margin-top: 2%;
+    }
+
+    #resultats {
+        font-size: 3em;
+    }
+};

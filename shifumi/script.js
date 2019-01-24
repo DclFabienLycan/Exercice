@@ -82,9 +82,6 @@ function shifumi () {
 
 shifumi ();
 
-restart.addEventListener ("click",
-function () {
-    shifumi ();
-    console.log("Marche pas");
-}
-);
+// restart.addEventListener ("click",
+// location.reload (), false
+// );
