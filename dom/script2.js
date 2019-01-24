@@ -26,10 +26,10 @@ function () {
     carre.style.width = "300px";
     carre.style.height = "300px";
     carre.style.marginTop = "-150px";
-}   setTimeout(function () {
+    setTimeout (function () {
     carre.style.width = carre + "px";
 }, 2000)
-);
+});
 
 button4.addEventListener ("click", 
 function () {
