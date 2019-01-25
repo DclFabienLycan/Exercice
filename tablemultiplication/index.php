@@ -1,3 +1,4 @@
+<!-- Passage sous Linux, fichiers fini dans un autre dossier -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
